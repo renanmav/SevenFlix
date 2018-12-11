@@ -6,7 +6,7 @@ import Movie from "./Movie";
 import api from "../services/api";
 import moment from "moment";
 
-import theMovieDBConfig from "../config/theMovieDB";
+import theMovieDBConfig from "../config/TheMovieDB";
 
 import { Title } from "../styles/MovieList";
 

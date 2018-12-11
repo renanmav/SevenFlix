@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import "./config/reactotronConfig";
+
+import "./config/Reactotron";
+import "./config/DevTools";
 
 import Home from "./pages/Home";
 
