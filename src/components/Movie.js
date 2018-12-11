@@ -24,9 +24,8 @@ export default class Movie extends Component {
         />
         <Content>
           <Title>{movie.title}</Title>
-          <Info>{movie.vote_average}</Info>
-          <Info>{movie.release_date}</Info>
-          <Info>{movie.original_language}</Info>
+          <Info>Nota: {movie.vote_average * 10}%</Info>
+          <Info>Data de lançamento: {movie.data_de_lancamento}</Info>
         </Content>
       </Container>
     );
