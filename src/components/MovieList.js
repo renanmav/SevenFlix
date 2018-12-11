@@ -10,8 +10,6 @@ import theMovieDBConfig from "../config/TheMovieDB";
 
 import { Title } from "../styles/MovieList";
 
-// import styles from './styles';
-
 export default class MovieList extends Component {
   state = {
     movies: []
@@ -41,8 +39,6 @@ export default class MovieList extends Component {
     this.setState({
       movies: movies.results
     });
-
-    console.tron.log(this.state.movies[0]);
   };
 
   render() {
@@ -59,8 +55,8 @@ export default class MovieList extends Component {
   }
 }
 
-/*
+/* Render all popular movies
 {this.state.movies.map(movie => (
-            <Movie key={movie.id} movie={movie} />
-          ))}
+  <Movie key={movie.id} movie={movie} />
+))}
 */

@@ -1,14 +1,19 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
+
+import { StatusBar } from "react-native";
 
 import "./config/Reactotron";
 import "./config/DevTools";
 
 import Home from "./pages/Home";
 
-console.tron.log("Hello World");
-
 export default class App extends Component {
   render() {
-    return <Home />;
+    return (
+      <Fragment>
+        <StatusBar hidden />
+        <Home />
+      </Fragment>
+    );
   }
 }
