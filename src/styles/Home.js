@@ -14,7 +14,7 @@ export const HeaderText = styled.Text`
   font-size: 20px;
 `;
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
   height: 100%;
   background-color: #2c1f54;
 `;

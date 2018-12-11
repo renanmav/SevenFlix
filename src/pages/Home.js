@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 
 import { Header, HeaderText, Container } from "../styles/Home";
+
 import MovieList from "../components/MovieList";
+import GenresList from "../components/GenresList";
 
 // import styles from './styles';
 
@@ -13,6 +15,7 @@ export default class Home extends Component {
           <HeaderText>SevenFlix</HeaderText>
         </Header>
         <MovieList />
+        <GenresList />
       </Container>
     );
   }

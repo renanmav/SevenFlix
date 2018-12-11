@@ -41,18 +41,26 @@ export default class MovieList extends Component {
     this.setState({
       movies: movies.results
     });
+
+    console.tron.log(this.state.movies[0]);
   };
 
   render() {
     return (
       <Fragment>
-        <Title>Destaques</Title>
+        <Title>Destaque</Title>
         <ScrollView>
-          {this.state.movies.map(movie => (
-            <Movie key={movie.id} movie={movie} />
-          ))}
+          {this.state.movies.length ? (
+            <Movie movie={this.state.movies[0]} />
+          ) : null}
         </ScrollView>
       </Fragment>
     );
   }
 }
+
+/*
+{this.state.movies.map(movie => (
+            <Movie key={movie.id} movie={movie} />
+          ))}
+*/

@@ -10,19 +10,6 @@ export const Container = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-size: 20px;
-  font-weight: bold;
-`;
-export const Info = styled.Text`
   font-size: 18px;
-  margin-top: 5px;
-`;
-
-export const Poster = styled.Image``;
-
-export const Content = styled.View`
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  font-weight: bold;
 `;
