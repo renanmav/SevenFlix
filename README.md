@@ -3,6 +3,10 @@
 This is a challenge project proposed by [@gabrielrangel95](https://github.com/gabrielrangel95).
 Basically, this app consumes the TMDB API and show details about the movies. Built in React Native.
 
+## Result demo
+
+![Example gif](images/teste.gif)
+
 ## Libs Used
 
 - Styled Components
