@@ -1,11 +1,26 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import { Container, Title, Poster, Content, Info } from "../styles/Movie";
+import {
+  Container,
+  Title,
+  Poster,
+  Content,
+  Info,
+  DetailButton,
+  DetailButtonText
+} from "../styles/Movie";
 
 export default class Movie extends Component {
   static propTypes = {
-    movie: PropTypes.object
+    movie: PropTypes.object,
+    navigation: PropTypes.object
+  };
+
+  handleDetailPage = () => {
+    this.props.navigation.navigate("MovieDetail", {
+      movie: this.props.movie
+    });
   };
 
   render() {
@@ -24,8 +39,11 @@ export default class Movie extends Component {
         />
         <Content>
           <Title>{movie.title}</Title>
-          <Info>Nota: {movie.vote_average * 10}%</Info>
+          <Info>Aprovação: {movie.vote_average * 10}%</Info>
           <Info>Data de lançamento: {movie.data_de_lancamento}</Info>
+          <DetailButton onPress={this.handleDetailPage}>
+            <DetailButtonText>Ver detalhes</DetailButtonText>
+          </DetailButton>
         </Content>
       </Container>
     );

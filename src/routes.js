@@ -1,10 +1,12 @@
 import { createStackNavigator, createAppContainer } from "react-navigation";
 
 import Home from "./pages/Home";
+import MovieDetail from "./pages/MovieDetail";
 
 const Navigator = createStackNavigator(
   {
-    Home
+    Home,
+    MovieDetail
   },
   {
     initialRouteName: "Home",

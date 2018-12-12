@@ -1,4 +1,6 @@
 import React, { Component, Fragment } from "react";
+import PropTypes from "prop-types";
+
 import { ScrollView } from "react-native";
 
 import Movie from "./Movie";
@@ -13,6 +15,10 @@ import { Title } from "../styles/MovieList";
 export default class MovieList extends Component {
   state = {
     movies: []
+  };
+
+  static propTypes = {
+    navigation: PropTypes.object
   };
 
   componentDidMount() {
@@ -47,7 +53,10 @@ export default class MovieList extends Component {
         <Title>Destaque</Title>
         <ScrollView>
           {this.state.movies.length ? (
-            <Movie movie={this.state.movies[0]} />
+            <Movie
+              movie={this.state.movies[0]}
+              navigation={this.props.navigation}
+            />
           ) : null}
         </ScrollView>
       </Fragment>

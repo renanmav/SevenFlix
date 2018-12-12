@@ -26,3 +26,20 @@ export const Content = styled.View`
   flex-direction: column;
   flex: 1;
 `;
+
+export const DetailButton = styled.TouchableOpacity`
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  justify-content: flex-end;
+`;
+
+export const DetailButtonText = styled.Text`
+  font-size: 18px;
+  font-weight: bold;
+  color: #009aad;
+  border-color: #009aad;
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 5px 20px;
+`;
