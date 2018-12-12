@@ -24,8 +24,6 @@ export default class GenresList extends Component {
         theMovieDBConfig.language
     );
 
-    console.tron.log(data.genres);
-
     this.setState({ genres: data.genres });
   };
 
